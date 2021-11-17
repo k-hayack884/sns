@@ -1,0 +1,23 @@
+<?php
+
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::get('/greeting', 'GreetingController@index');
+//Route::post([アドレス], [関数など]);
+Route::post('/greeting/welcome', 'GreetingController@welcome');
+
+Route::get('/greeting/hello', 'GreetingController@hello');
