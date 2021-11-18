@@ -3,6 +3,7 @@
         "@saveall": true
     },
     "extensions": {
+        "@git.ignoreLimitWarning": true,
         "@json.schemas": []
     },
     "instance": {
